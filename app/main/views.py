@@ -76,19 +76,19 @@ def new_blog():
 
 @main.route('/blogs/sports')
 def sports():
-    blogs = Blog.get_blogs('Sports-Blog')
+    blogs = Blog.get_blogs('SportsBlog')
 
     return render_template('sports.html',blogs = blogs)
 
 @main.route('/blogs/travel')
 def travel():
-    blogs = Blog.get_blogs('Travel-Blog')
+    blogs = Blog.get_blogs('TravelBlog')
 
     return render_template('travel.html',blogs = blogs)
 
 @main.route('/blogs/fitness')
 def fitness():
-    blogs = Blog.get_blogs('Fitness-Blog')
+    blogs = Blog.get_blogs('FitnessBlog')
 
     return render_template('fitness.html',blogs = blogs)
 
@@ -104,7 +104,7 @@ def food():
 
     return render_template('food.html',blogs = blogs)
 
-@main.route('/blogs/politics')
+@main.route('/blogs/political')
 def politics():
     blogs = Blog.get_blogs('Political-Blog')
 

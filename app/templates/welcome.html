@@ -1,0 +1,52 @@
+{% extends 'base.html'%}
+{% block content %}
+<style>
+    body {
+    background-image: url("https://bit.ly/39RCQnE");
+    background-size: cover;
+    height: 100%;
+    
+    
+}
+
+.welcome {
+    text-align: center;
+
+}
+
+.welcome h1 {
+    font-family: 'Bilbo Swash Caps';
+    font-size: 150px;
+    color: gold;
+}
+
+.welcome h2 {
+    font-family: 'Cinzel';
+    font-size: 30px;
+    color: gold;
+}
+
+.welcome a {
+    font-family: 'Mukta';
+}
+
+.welcome a:hover {
+    color: white;
+}
+</style>
+      <div class="container-fluid welcome-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 welcome">
+                        <h1>{{title}}</h1>
+                        <h2> To Blog Post</h2>
+                        {% if current_user.is_authenticated%}
+                        <a id="start" class="btn btn-danger animated infinite flash" href="{{url_for('main.home')}}">View Blogs</a>
+                        {% else %}
+                        <a id="start" class="btn btn-danger animated infinite flash" href="{{url_for('auth.register')}}">Sign up</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+{%endblock%}
