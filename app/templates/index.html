@@ -9,15 +9,6 @@
     }
 </style>
 
-<div class="container-fluid quotes">
-    <div class="row">
-        <div class="col-md-12">
-            <h4 class="text-center">Quotes</h4>
-            <p class="text-center">"{{quote}}"</p>
-            <p class="text-center"><strong>Author: {{author}}</strong></p>
-        </div>
-    </div>
-</div>
 {% for alert in get_flashed_messages() %}
 <div class="alert alert-danger">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -32,8 +23,7 @@
             </div>
             <div class="card-body text-primary">
                 <h5 class="card-title">Get Latest Sports Articles</h5>
-                <p class="card-text">Latest sports news from around the world with in-depth analysis, features, photos
-                    and videos covering football, tennis, motorsport, golf, rugby, sailing and skiing</p>
+                <p class="card-text">The best short articles and essays about sports Interesting sport articles and sports essays by famous authors</p>
             </div>
             <div class="bg-transparent border-primary"><a href="/blogs/sports"
                     class="btn btn-outline-dark float-right">View
@@ -46,7 +36,7 @@
             </div>
             <div class="card-body text-primary">
                 <h5 class="card-title">Get the Latest Travel Articles</h5>
-                <p class="card-text">Highlighting some of my favorite travel blogs that can help you travel better.</p>
+                <p class="card-text">My experience for  Highlighting some of my favorite travel blogs that can help you travel better informative and inspirational features, destination roundups, travel ideas, tips and beautiful photos in order to help you plan your next holiday .</p>
             </div>
             <div class="bg-transparent border-primary"><a href="/blogs/travel"
                     class="btn btn-outline-dark float-right">View
@@ -59,7 +49,7 @@
             </div>
             <div class="card-body text-primary">
                 <h5 class="card-title">Get the Best Fitness Articles</h5>
-                <p class="card-text"> Fitness enthusiasts like you and me need the help of experts to stay focused and
+                <p class="card-text">Exercising regularly, every day if possible, is the single most important thing you can do for your health. In the short term, exercise helps to control appetite, boost mood, and improve sleep. In the long term, it reduces the risk of heart disease, stroke, diabetes, dementia, depression, and many cancers. The Centers for Disease Control and Prevention for Fitness enthusiasts like you and me need the help of experts to stay focused and
                     motivated.</p>
             </div>
             <div class="bg-transparent border-primary"><a href="/blogs/fitness"
@@ -89,7 +79,7 @@
             </div>
             <div class="card-body text-primary">
                 <h5 class="card-title">Delicious Food Recipe Kenyan Articles</h5>
-                <p class="card-text"> Food Blog that shares recipes and cooking videos from all over the world with
+                <p class="card-text">Find out everything there is to know about food and stay updated on the latest health news with the comprehensive articles and interactive features focused on the food you eat. Food Blog that shares recipes and cooking videos from all over the world with
                     focus on using ingredients readily available.</p>
             </div>
             <div class="bg-transparent border-primary"><a href="/blogs/food"
@@ -102,7 +92,7 @@
             </div>
             <div class="card-body text-primary">
                 <h5 class="card-title">Are you looking for prominent political blogs in Kenya?</h5>
-                <p class="card-text"> Check out this articles for the best political blogs on the web</p>
+                <p class="card-text"> Check out this articles for the best and juiciest political blogs on the web</p>
             </div>
             <div class="bg-transparent border-primary"><a href="/blogs/politics"
                     class="btn btn-outline-dark float-right">View
@@ -111,28 +101,23 @@
     </div>
 </div>
 <footer style='background-color: 4ABBAD' class="page-footer font-small unique-color-dark pt-4">
-
-
-    <div style='background-color: 4ABBAD' class="container">
-        <ul class="list-unstyled list-inline text-center py-2">
-            <li class="list-inline-item">
-                <h5 class="mb-1">Subscribe to fun blog</h5>
-            </li>
-            <li class="list-inline-item">
-                <a href="/subscription" class="btn btn-outline-white btn-rounded">Sign up!</a>
-            </li>
-        </ul>
-        
-
+    <div class="container-fluid quotes">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Quotes</h4>
+                <p class="text-center">"{{quote}}"</p>
+                <p class="text-center"><strong>Author: {{author}}</strong></p>
+            </div>
+        </div>
     </div>
-    
-
-    
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/">Fun blog.com</a>
-    </div>
-    
-
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <h5 class="mb-1">Subscribe to Amazing blog</h5>
+        </li>
+        <li class="list-inline-item">
+            <a href="/subscription" class="btn btn-outline-white btn-rounded">Sign up!</a>
+        </li>
+    </ul>
 </footer>
 
 
