@@ -47,6 +47,6 @@ To run the tests for the class files:
 Feel free to reach out to the developer at:
   * 0725142516
   *  Email:halimaadan92@gmail.com
-## #  Licence
+<!-- ## #  Licence
  licensed under the [MIT License](license)
- copyright(c) 2020 Blog
+ copyright(c) 2020 Blog -->
